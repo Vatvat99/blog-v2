@@ -1,0 +1,421 @@
+/*
+Theme Name: Aurélien
+Theme URI: http://wordpress.org/
+Description: Mon thème perso à moi.
+Author: Aurélien Vattant
+Version: 1.0
+Tags: largeur fixe, deux colonnes
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+/*----------- STRUCTURE ------------*/
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	color: #575757;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	background: #dad6bd url('images/background-01.jpg') no-repeat top left;
+}
+
+div#principal {
+	position: relative;
+	overflow: auto;
+	min-height: 100%;
+	width: 920px;
+	background: url('images/bg-content-middle.png') repeat-y top left;
+}
+
+div#header {
+	height: 167px;
+	overflow: auto;
+	background: #dad6bd url('images/background-01.jpg') no-repeat top left;
+}
+
+div#header p {
+	margin: 30px 0 0 140px;
+}
+
+div#contenu {
+	padding-bottom: 50px;
+	overflow: auto;
+}
+
+div#colonne-gauche {
+	width: 535px;
+	margin: 0 0 0 109px;
+	padding: 40px 30px 50px 30px;
+	background: url('images/bg-content-top.jpg') no-repeat top left;
+}
+
+div#colonne-droite {
+	float: right;
+	width: 188px;
+	padding: 20px 14px 20px 14px;
+	font-size: 11px;
+}
+
+ul.rubrique,
+div.rubrique {
+	margin-bottom: 30px;
+}
+
+div#footer {
+	position: absolute;
+	width: 596px;
+	height: 70px;
+	bottom: 0;
+	left: 109px;
+	background: #dad6bd;
+}
+
+div#contenu-bottom {
+	float: left;
+	width: 596px;
+	height: 4px;
+	background: url('images/bg-content-bottom.png') no-repeat top left;
+}
+
+div#footer p.wordpress {
+	margin: 2px 0 0 450px;
+	width: 115px;
+	height: 45px;
+	background: url('images/wordpress.png') no-repeat right -10px;
+}
+
+div#footer p.wordpress:hover {
+	background: url('images/wordpress.png') no-repeat right -5px;
+}
+
+/*----------- CONTENU ------------*/
+
+h1 {
+	color: #75543e;
+	font-size: 36px;
+	font-weight: normal;
+	font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+h1 span {
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+h2 {
+	color: #75543e;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+h2.categorie {
+	text-align: center;
+	color: #575757;
+	margin-bottom: 30px;
+}
+
+h3 {
+	color: #575757;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Trebuchet MS,Arial,Helvetica,sans-serif;
+}
+
+img {
+	border: 0;
+}
+
+img.galerie {
+	margin-right: 2px;
+}
+
+img.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+div.message img,
+div.comment img,
+div.entry-content img {
+	border: 4px solid #cecab3;
+}
+
+a {
+	color: #48857f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #48857f;
+	text-decoration: underline;
+}
+
+a.rss {
+	color: #575757;
+	font-size: 9px;
+	margin: 0 8px 0 0;
+	padding: 36px 0 0 0;
+	background: url('images/flux-rss.png') no-repeat top center;
+}
+
+a.deviant-art {
+	color: #575757;
+	font-size: 9px;
+	margin: 0 3px 0 3px;
+	padding: 36px 0 0 0;
+	background: url('images/deviant-art.png') no-repeat top center;
+}
+
+a.sens-critique {
+	color: #575757;
+	font-size: 9px;
+	margin: 0;
+	padding: 36px 0 0 0;
+	background: url('images/sens-critique.png') no-repeat top center;
+}
+
+p.categories a,
+p.labels a,
+p.liens a,
+div.rubrique ul a,
+div.tagcloud a {
+	color: #575757;
+}
+
+.gras { font-weight: bold; }
+
+.small { font-size: 11px; }
+
+.xsmall { font-size: 10px; }
+
+.large { font-size: 14px; }
+
+.blanc { color: #ffffff; }
+
+.orange { color: #d77100; }
+
+.aligncenter { text-align: center; }
+
+.droite { text-align: right; }
+
+.margeHaut { margin-top: 60px; }
+
+.margeBas { margin-bottom: 40px; }
+
+.pseudo {
+	color: #575757;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+p {
+	margin: 0;
+}
+
+div.message p,
+div.comment p,
+div.entry-content p {
+	margin: 0 0 15px 0;
+}
+
+div#colonne-gauche p.separation {
+	margin: 30px 0;
+    text-align: center;
+}
+
+div#colonne-gauche div.entry-utility {
+	color: #979797;
+	margin: 0px 0px 50px 0px;
+}
+
+div#nav-below {
+	overflow: auto;
+	margin: 20px 0 20px 0;
+}
+
+div#colonne-gauche div.nav-previous {
+	float: left;
+}
+
+div#colonne-gauche div.nav-next {
+	float: right;
+}
+
+div#colonne-gauche div#comments ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+div#colonne-gauche div#comments ul ul {
+	padding-left: 30px;
+}
+
+textarea#comment {
+	/*width: 528px;*/
+	width: 98%;
+	height: 100px;
+	margin: 4px 0 4px 0;
+	border: 1px solid #c5c5c5;
+	padding: 2px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+
+p.form-submit {
+	text-align: right;
+}
+
+input[type=text] {
+	/*width: 370px;*/
+	width: 70%;
+	border: 1px solid #c5c5c5;
+	margin: 4px 0 4px 0;
+	padding: 2px;
+	font-size: 12px;
+}
+
+label {
+	/*width: 158px;*/
+	width: 28%;
+	display: block;
+	float: left;
+	margin: 4px 0 4px 0;
+}
+
+input[type=submit] {
+	color: #575757;
+	font-weight: bold;
+	font-size: 12px;
+	border: none;
+	margin: 20px 5px 20px 0px;
+	width: 183px;
+	height: 28px;
+	background: url('images/bouton.png') no-repeat top left;
+}
+
+input[type=submit]:hover {
+	color: #48857f;
+	cursor: pointer;
+}
+
+input::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
+
+div.commentaire {
+	position: relative;
+	margin: 20px 0px 20px 0px;
+}
+
+div.avatar {
+	float: left;
+}
+
+div.avatar img {
+	border: 1px solid #eeeeee;
+}
+
+div.fleche {
+	position: absolute;
+	width: 12px;
+	height: 23px;
+	background: url('images/comment-fleche.png') no-repeat top left;
+	top: 10px;
+	left: 50px;
+}
+
+div.comment {
+	border: 2px solid #dad6bd;
+	border-radius: 2px;
+	margin-left: 60px;
+	padding: 10px;
+}
+
+form {
+	margin: 10px 0px 10px 0px;
+}
+
+div#colonne-droite img.profil {
+	float: left;
+	margin: 0 8px 10px 0;
+}
+
+div#colonne-droite p {
+	margin: 0 0 10px;
+}
+
+div#colonne-droite p.separation {
+	clear: both;
+    text-align: center;
+}
+
+div#colonne-droite p.reseaux-sociaux {
+	padding: 36px 0 0 0;
+}
+
+div#colonne-droite ul {
+	list-style-type: none;
+	margin: 0 0 15px 0;
+	padding-left: 0px;
+	font-size: 11px;
+}
+
+div#colonne-droite li {
+	list-style-type: none;
+}
+
+/*---------------- PLUGIN PAGEBAR ------------------*/
+
+.pagebar {
+	text-align: center;
+	padding: 0.2em 0.5em;
+	margin-right: 0.1em;
+	margin-bottom: 1.0em;
+	background: #ffffff;
+}
+
+.pagebar a,.pageList .this-page {
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+}
+
+.pagebar a:visited {
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+}
+
+.pagebar .break {
+	padding: 2px 6px 2px 6px;
+	border: none;
+	background: #ffffff;
+	text-decoration: none;
+}
+
+.pagebar .this-page {
+	padding: 0.2em 0.5em;
+	font-weight: bold;
+	background: #48857F;
+	color: #ffffff;
+}
+
+.pagebar a:hover {
+	text-decoration: underline;
+}
+
+.pagebar .inactive {
+	color: #575757;
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+}
